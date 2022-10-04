@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes" />
+<meta name="generator" content="Hugo 0.104.2" />
+<title>About Hugo Minis - A minimal Hugo theme</title>
+
+<link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../images/android-chrome-192x192.png">
+<link rel="apple-touch-icon" type="image/x-icon" href="../images/apple-touch-icon" />
+<link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+<header>
+<nav>
+<h1 class="title">A minimal Hugo theme</h1>
+<ul class="menu">
+
+<li><a href="../">Home</a></li>
+
+<li><a href="../about/">About</a></li>
+
+<li><a href="../categories/">Categories</a></li>
+
+<li><a href="../tags/">Tags</a></li>
+
+<li><a href="../index.xml">Subscribe</a></li>
+
+</ul>
+</nav>
+</header>
+
+<main class="content" role="main">
+<article>
+<h1 class="entry-title">About Hugo Minis</h1>
+<div class="entry-meta">
+<span></span>
+</div>
+<div class="entry">
+<p><strong>Minis</strong> is a Hugo theme written by <a href="https://wejan.cn">Wejan</a>, it&rsquo;s modified from Yihui&rsquo;s <a href="https://github.com/yihui/hugo-xmin/">XMin</a> theme, most of <code>contents</code> and <code>styles</code> are from xmin. The main motivation for writing this theme was to provide a simple and minimal theme for myself. Here is my website as a <a href="https://wejan.cn">demo</a>(Chinese).</p>
+<h1 id="configtoml">config.toml</h1>
+<p>For this example site, I defined permalinks for sections <code>post</code>, so that the links to pages under the directory will contain the date info, e.g., <code>https://minis.wejan.cn/post/2016/02/14/a-plain-markdown-post/</code>. This is optional, and it is up to your personal taste of URLs.</p>
+<pre><code class="language-toml">permalinks:
+  post = &quot;/post/:year/:month/:day/:slug/&quot;
+</code></pre>
+<p>You can define the menu through <code>menu.main</code>, e.g.,</p>
+<pre><code class="language-toml">[[menu.main]]
+    name = &quot;Home&quot;
+    url = &quot;&quot;
+    weight = 1
+[[menu.main]]
+    name = &quot;About&quot;
+    url = &quot;about/&quot;
+    weight = 2
+[[menu.main]]
+    name = &quot;Categories&quot;
+    url = &quot;categories/&quot;
+    weight = 3
+[[menu.main]]
+    name = &quot;Tags&quot;
+    url = &quot;tags/&quot;
+    weight = 4
+[[menu.main]]
+    name = &quot;Subscribe&quot;
+    url = &quot;index.xml&quot;
+</code></pre>
+<p>Alternatively, you can add <code>menu: main</code> to the YAML metadata of any of your pages, so that these pages will appear in the menu.</p>
+<p>The page footer can be defined in <code>.Params.footer</code>, and the text is treated as Markdown, e.g.,</p>
+<pre><code>params:
+  footer = &quot;&amp;copy; 2022 -- {Year} [Wejan](https://wejan.cn)&quot;
+</code></pre>
+<p>Here <code>{Year}</code> means the year in which the site is built (usually the current year).</p>
+<h2 id="latex-math-expressions-support">LaTeX math expressions support</h2>
+<p>It can easily support LaTeX math expressions, using <a href="https://yihui.org/en/2018/07/latex-math-markdown/">Yihui&rsquo;s solution</a>, With a little bit customization, e.g.,</p>
+<p><code>$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$</code></p>
+<p>The source code is <a href="https://github.com/lowejan/hugo-minis">on Github</a>. Happy hacking!</p>
+
+</div>
+</article>
+
+
+</main>
+<footer>
+  
+  © 2022 <a href="https://wejan.cn">Wejan</a> | <a href="https://github.com/lowejan">Github</a>
+  
+  <script defer src="//yihui.org/js/math-code.js"></script>
+<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</footer>
+</body>
+</html>
+

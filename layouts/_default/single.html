@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<main class="content" role="main">
+<article>
+<h1 class="entry-title">{{ .Title | markdownify }}</h1>
+<div class="entry-meta">
+<span>{{ if (gt .Params.date 0) }}{{ .Date.Format "2006/01/02" }}{{ end }}</span>
+</div>
+<div class="entry">
+{{ .Content }}
+</div>
+</article>
+{{ partial "prevnext.html" . }}
+</main>
+{{ partial "footer.html" . }}

@@ -1,0 +1,42 @@
+baseURL = "/"
+relativeurls = true
+languageCode = "en-us"
+hascjklanguage = true
+title = "A minimal Hugo website"
+theme = "minis"
+disqusshortname = ""
+
+[permalinks]
+    post = "/post/:year/:month/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = ""
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 2
+[[menu.main]]
+    name = "Categories"
+    url = "categories/"
+    weight = 3
+[[menu.main]]
+    name = "Tags"
+    url = "tags/"
+    weight = 4
+[[menu.main]]
+    name = "Subscribe"
+    url = "index.xml"
+
+[params]
+    description = "A website built through Hugo."
+    footer = "&copy; {Year} [Wejan](https://wejan.cn) | [Github](https://github.com/lowejan) "
+    favicon = "images/favicon.png"
+
+[markup]
+[markup.highlight]
+    codeFences = false
+[markup.goldmark]
+    [renderer]
+	unsafe = true

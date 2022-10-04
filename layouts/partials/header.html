@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes" />
+{{ hugo.Generator }}
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+{{ with .Site.Params.favicon }}
+<link rel="icon" type="image/x-icon" href="{{ . | relURL }}" />
+{{ end }}
+<link rel="shortcut icon" type="image/x-icon" href="/images/android-chrome-192x192.png">
+<link rel="apple-touch-icon" type="image/x-icon" href="/images/apple-touch-icon" />
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
+</head>
+<body>
+<header>
+<nav>
+<h1 class="title">{{ .Site.Title }}</h1>
+<ul class="menu">
+{{ range .Site.Menus.main }}
+<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+{{ end }}
+</ul>
+</nav>
+</header>

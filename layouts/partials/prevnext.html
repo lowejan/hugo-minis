@@ -3,13 +3,13 @@
 <nav id="article-nav">
     {{ if .PrevInSection }}
     <a href="{{ .PrevInSection.Permalink }}" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"><— {{ .PrevInSection.Title }}</div>
+      <div class="article-nav-title">&#8592; {{ .PrevInSection.Title }}</div>
     </a>
     {{ end }}
 
     {{ if .NextInSection }}
     <a href="{{ .NextInSection.Permalink }}" id="article-nav-newer" class="article-nav-link-wrap">
-      <div class="article-nav-title">{{ .NextInSection.Title }} —></div>
+      <div class="article-nav-title">{{ .NextInSection.Title }} &#8594;</div>
     </a>
     {{ end }}
 </nav>

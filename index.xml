@@ -53,7 +53,7 @@ Quisque mattis volutpat lorem vitae feugiat.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Minis is a Hugo theme written by Wejan, it&amp;rsquo;s modified from Yihui&amp;rsquo;s XMin theme, most of contents and styles are from xmin. The main motivation for writing this theme was to provide a simple and minimal theme for myself. Here is my website as a demo(Chinese).
+      <description>Minis is a Hugo theme written by Wejan, it&amp;rsquo;s modified from Yihui&amp;rsquo;s XMin theme, most of contents and styles are from xmin. The main motivation for writing this theme was to provide a simple and minimal theme for myself. Here is a website as a demo.
 config.toml For this example site, I defined permalinks for sections post, so that the links to pages under the directory will contain the date info, e.</description>
     </item>
     

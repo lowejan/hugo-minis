@@ -31,7 +31,7 @@ disqusshortname = ""
 
 [params]
     description = "A website built through Hugo."
-    footer = "&copy; {Year} [Wejan](https://wejan.cn) | [Github](https://github.com/lowejan) "
+    footer = "&copy; {Year} [Wejan](https://lujok.com) | [Github](https://github.com/lujok.com) "
     favicon = "images/favicon.png"
 
 [markup]

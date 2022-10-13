@@ -3,7 +3,7 @@ title: About Hugo Minis
 author: Wejan
 ---
 
-**Minis** is a Hugo theme written by [Wejan](https://wejan.cn), it's modified from Yihui's [XMin](https://github.com/yihui/hugo-xmin/) theme, most of `contents` and `styles` are from xmin. The main motivation for writing this theme was to provide a simple and minimal theme for myself. Here is my website as a [demo](https://wejan.cn)(Chinese).
+**Minis** is a Hugo theme written by [Wejan](https://lujok.com), it's modified from Yihui's [XMin](https://github.com/yihui/hugo-xmin/) theme, most of `contents` and `styles` are from xmin. The main motivation for writing this theme was to provide a simple and minimal theme for myself. Here is a website as a [demo](https://minis.lujok.com).
 
 # config.toml
 
@@ -44,7 +44,7 @@ The page footer can be defined in `.Params.footer`, and the text is treated as M
 
 ```
 params:
-  footer = "&copy; 2022 -- {Year} [Wejan](https://wejan.cn)"
+  footer = "&copy; 2022 -- {Year} [Wejan](https://lujok.com)"
 ```
 
 Here `{Year}` means the year in which the site is built (usually the current year).
@@ -56,4 +56,4 @@ It can easily support LaTeX math expressions, using [Yihui's solution](https://y
 `$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$`
 
 
-The source code is [on Github](https://github.com/lowejan/hugo-minis). Happy hacking!
+The source code is [on Github](https://github.com/lujok/hugo-minis). Happy hacking!
